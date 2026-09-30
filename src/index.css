@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Forest greens */
+  --color-forest-950: #0b1a13;
+  --color-forest-900: #132e22;
+  --color-forest-800: #1a382b;
+  --color-forest-700: #234c3b;
+  --color-forest-600: #2f624d;
+  --color-forest-500: #3c7d63;
+  --color-forest-400: #559e80;
+  --color-forest-300: #7dc0a4;
+  --color-forest-200: #b0decb;
+  --color-forest-100: #d6f0e4;
+  --color-forest-50: #edf8f3;
+
+  /* Warm Terracotta */
+  --color-terracotta-900: #6c2a18;
+  --color-terracotta-800: #893720;
+  --color-terracotta-700: #a74327;
+  --color-terracotta-600: #c65332;
+  --color-terracotta-500: #dc6642;
+  --color-terracotta-400: #e88667;
+  --color-terracotta-300: #f2aa93;
+  --color-terracotta-200: #facfc2;
+  --color-terracotta-100: #fde8e1;
+  --color-terracotta-50: #fdf5f2;
+
+  /* Warm Cream & Ivory */
+  --color-ivory-50: #fdfcf9;
+  --color-ivory-100: #faf8f5;
+  --color-ivory-200: #f3efe8;
+  --color-ivory-300: #eae4d7;
+  --color-ivory-400: #d8cebe;
+
+  /* Soft Golden Yellow */
+  --color-amber-gold: #f2b73b;
+  --color-amber-gold-light: #fbe6aa;
+
+  /* Deep Charcoal Text */
+  --color-charcoal-950: #141716;
+  --color-charcoal-900: #1e2421;
+  --color-charcoal-800: #2c332f;
+  --color-charcoal-700: #3e4742;
+  --color-charcoal-600: #59655e;
+  --color-charcoal-500: #75837b;
+  --color-charcoal-400: #9aa7a0;
+  --color-charcoal-300: #c3cdc8;
+}
+
+/* Custom base typography & mobile responsiveness tweaks */
+html, body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal-900);
+  background-color: var(--color-ivory-100);
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Prevent unwanted automatic zoom-in on mobile inputs (iOS Safari requirement) */
+input, select, textarea {
+  font-size: 16px;
+}
+@media (min-width: 640px) {
+  input, select, textarea {
+    font-size: 14px;
+  }
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f3efe8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3cdc8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa7a0;
+}
+
+/* Image zoom and subtle animation helpers */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .img-zoom {
+  transform: scale(1.04);
+}
+
+/* Mobile safe area utility */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
