@@ -106,26 +106,55 @@ export const SponsorDetail: React.FC = () => {
               )}
             </div>
 
-            <div className="bg-[#EDF8F3] rounded-3xl border border-[#B0DECB] p-6 text-xs text-[#1D4336] space-y-3">
-              <h4 className="font-serif font-bold text-base text-[#1A382B]">What Your Sponsorship Covers</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2C6A53] shrink-0" />
-                  <span>High-protein veterinary-approved diet</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2C6A53] shrink-0" />
-                  <span>Bi-annual full bloodwork & clinical monitoring</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2C6A53] shrink-0" />
-                  <span>Heating pads, fleece bedding, and joint therapy</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2C6A53] shrink-0" />
-                  <span>Quarterly photo updates sent directly to your email</span>
-                </li>
-              </ul>
+            {/* Sponsorship Cost Breakdown Card */}
+            <div className="bg-[#EDF8F3] rounded-3xl border border-[#B0DECB] p-6 text-xs text-[#1D4336] space-y-4 shadow-sm">
+              <div className="flex items-center justify-between pb-2 border-b border-[#B0DECB]">
+                <div>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#2F624D] block">
+                    Monthly Guardian Program
+                  </span>
+                  <h4 className="font-serif font-bold text-lg text-[#1A382B]">
+                    Care Breakdown (৳2,500 / mo)
+                  </h4>
+                </div>
+                <div className="bg-[#1A382B] text-white font-serif font-bold text-xs px-3 py-1 rounded-full">
+                  ৳2,500 / mo
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-start gap-3 bg-[#FAF8F5] p-3 rounded-xl border border-[#D8CEBE]">
+                  <span className="text-lg">🍲</span>
+                  <div>
+                    <span className="font-bold text-[#1E2421] block">Daily Food & Nutrition</span>
+                    <span className="text-[#C65332] font-semibold text-xs block">৳1,200 – ৳1,500 / month</span>
+                    <span className="text-[11px] text-[#59655E] mt-0.5 block">
+                      High-protein veterinary-approved diet, gastrointestinal wet bowls, and wholesome dry food.
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 bg-[#FAF8F5] p-3 rounded-xl border border-[#D8CEBE]">
+                  <span className="text-lg">🏠</span>
+                  <div>
+                    <span className="font-bold text-[#1E2421] block">Overheads, Utility & Daily Supplies</span>
+                    <span className="text-[#2C6A53] font-semibold text-xs block">৳1,000 – ৳1,300 / month</span>
+                    <span className="text-[11px] text-[#59655E] mt-0.5 block">
+                      Sanctuary heating/fans, facility hygiene, daily cleaning, organic cat litter & miscellaneous upkeep.
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2 pt-1 text-[11px] text-[#2F624D]">
+                  <CheckCircle2 className="w-4 h-4 text-[#2C6A53] shrink-0 mt-0.5" />
+                  <span>Quarterly photo updates and wellness progress notes sent directly to your email.</span>
+                </div>
+              </div>
+
+              {/* Note without medical costs */}
+              <div className="p-3 bg-[#FDFCF9] rounded-xl border border-[#B0DECB] text-[11px] text-[#59655E] leading-relaxed">
+                <strong className="text-[#1E2421]">Note:</strong> ৳2,500 is the approximate monthly upkeep without medical costs. Emergency clinical surgeries, orthopedic implants, and hospitalizations are supported separately via the Medical Care Fund.
+              </div>
             </div>
           </div>
 

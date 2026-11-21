@@ -286,17 +286,17 @@ export const BiraalBari: React.FC = () => {
             How You Can Keep Biraal Bari Safe
           </h2>
           <p className="text-sm text-[#59655E] leading-relaxed">
-            Running a 40+ resident sanctuary requires constant food supplies, medical dressings, veterinary diagnostic tests, and dedicated caretaker salaries. You can sponsor an individual cat monthly or contribute to the general sanctuary food fund.
+            Running a 40+ resident sanctuary requires constant food supplies, medical dressings, veterinary diagnostic tests, and dedicated caretaker salaries. You can join our <strong>Sponsor a Cat program (৳2,500 / month)</strong> covering food (৳1,200–1,500) and overheads/litter (৳1,000–1,300), or make a <strong>1-time donation</strong> in USD ($100, $250, $500, Custom).
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/sponsor">
               <Button variant="terracotta" size="lg">
-                Sponsor a Resident Monthly
+                Sponsor a Cat (৳2,500 / mo)
               </Button>
             </Link>
             <Link to="/donate">
               <Button variant="secondary" size="lg">
-                Donate to Sanctuary Fund (৳)
+                1-Time Donation (USD / ৳)
               </Button>
             </Link>
           </div>

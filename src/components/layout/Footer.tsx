@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
                 <Link to="/adopt" className="hover:text-white hover:underline transition-colors">Adopt an Animal</Link>
               </li>
               <li>
-                <Link to="/sponsor" className="hover:text-white hover:underline transition-colors">Sponsor a Resident</Link>
+                <Link to="/sponsor" className="hover:text-white hover:underline transition-colors">Sponsor a Cat</Link>
               </li>
               <li>
                 <Link to="/volunteer" className="hover:text-white hover:underline transition-colors">Volunteer Opportunities</Link>

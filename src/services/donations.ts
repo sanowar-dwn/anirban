@@ -13,6 +13,9 @@ export const donationsService = {
 
     const record: DonationRecord = {
       ...donationData,
+      amount: donationData.amount ?? donationData.amountBDT ?? 0,
+      currency: donationData.currency ?? 'BDT',
+      amountBDT: donationData.currency === 'USD' ? (donationData.amount ?? 0) * 120 : (donationData.amount ?? donationData.amountBDT ?? 0),
       id: `don-${Date.now()}`,
       receiptNumber,
       date: new Date().toLocaleDateString('en-US', {

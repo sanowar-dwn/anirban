@@ -158,14 +158,16 @@ export interface AdoptionApplication {
 export interface DonationRecord {
   id: string;
   receiptNumber: string;
-  amountBDT: number;
+  amount: number;
+  amountBDT?: number;
+  currency: 'BDT' | 'USD';
   frequency: 'one-time' | 'monthly';
-  purpose: 'General Care' | 'Medical Care' | 'Biraal Bari' | 'Rescue Operations' | 'Animal Sponsorship';
+  purpose: 'General Care' | 'Medical Care' | 'Biraal Bari' | 'Rescue Operations' | 'Animal Sponsorship' | 'Sponsor a Cat';
   animalSlug?: string;
   donorName: string;
   donorEmail: string;
   donorPhone: string;
-  paymentMethod: 'bKash' | 'Nagad' | 'Visa/Mastercard' | 'Bank Transfer';
+  paymentMethod: 'bKash' | 'Nagad' | 'Visa/Mastercard' | 'Bank Transfer' | 'International Card / PayPal';
   date: string;
   status: 'Completed';
 }

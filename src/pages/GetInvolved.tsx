@@ -34,11 +34,11 @@ export const GetInvolved: React.FC = () => {
       badge: 'Immediate Need'
     },
     {
-      title: 'Sponsor a Resident',
+      title: 'Sponsor a Cat',
       category: 'Biraal Bari Guardian',
-      desc: 'Commit to a monthly contribution that covers specialized food and hospice care for a disabled cat.',
+      desc: 'Commit to ৳2,500/month covering food, litter, and shelter overheads, or make a 1-time donation in USD.',
       link: '/sponsor',
-      cta: 'Choose an Animal to Sponsor',
+      cta: 'Sponsor a Cat Program',
       image: 'https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=800&q=80',
       badge: 'Monthly Care'
     },

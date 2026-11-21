@@ -414,14 +414,14 @@ export const AnimalProfile: React.FC = () => {
                   Sanctuary Guardian Fund
                 </span>
                 <h4 className="font-serif text-xl font-bold">
-                  Sponsor {animal.name} Monthly
+                  Sponsor a Cat: {animal.name}
                 </h4>
                 <p className="text-xs text-[#D6F0E4] leading-relaxed">
-                  Monthly care requires approximately <strong>৳{animal.monthlySponsorshipNeededBDT.toLocaleString()}</strong> for specialized nutrition, hydrotherapy, and routine diagnostics.
+                  Monthly care is approximately <strong>৳{animal.monthlySponsorshipNeededBDT.toLocaleString()}</strong> (food ৳1,200–1,500 & overheads/litter ৳1,000–1,300, without medical costs). Or choose a 1-time gift in USD ($100, $250, $500, Custom).
                 </p>
                 <Link to={`/sponsor/${animal.slug}`} className="block">
                   <Button variant="terracotta" size="md" className="w-full">
-                    Become a Monthly Sponsor
+                    Sponsor or Donate
                   </Button>
                 </Link>
               </div>

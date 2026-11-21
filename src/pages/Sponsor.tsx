@@ -39,10 +39,10 @@ export const Sponsor: React.FC = () => {
               Lifelong Guardian Circle
             </span>
             <h1 className="font-serif text-4xl sm:text-6xl font-extrabold text-[#1E2421] leading-tight mb-4">
-              Sponsor an Animal in Need.
+              Sponsor a Cat in Need.
             </h1>
             <p className="text-base sm:text-lg text-[#59655E] leading-relaxed">
-              When an animal cannot be adopted due to permanent trauma, blindness, or chronic medical needs, your monthly sponsorship ensures they are never forgotten.
+              When a resident cannot be adopted due to permanent trauma, blindness, or chronic needs, our <strong>Sponsor a Cat program (৳2,500 / month)</strong> or <strong>1-time donation options</strong> ensure they receive continuous food, shelter, and love.
             </p>
           </div>
         </div>
@@ -54,12 +54,14 @@ export const Sponsor: React.FC = () => {
           <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#D8CEBE]">
             <span className="font-serif text-2xl font-bold text-[#C65332] block mb-2">01</span>
             <h3 className="font-serif text-lg font-bold text-[#1E2421] mb-1">Pick a Resident</h3>
-            <p className="text-xs sm:text-sm text-[#59655E]">Choose a cat or dog whose story touches your heart.</p>
+            <p className="text-xs sm:text-sm text-[#59655E]">Choose a cat whose rescue story touches your heart.</p>
           </div>
           <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#D8CEBE]">
             <span className="font-serif text-2xl font-bold text-[#C65332] block mb-2">02</span>
-            <h3 className="font-serif text-lg font-bold text-[#1E2421] mb-1">Select Monthly Support</h3>
-            <p className="text-xs sm:text-sm text-[#59655E]">Support food (৳1,000), medical care (৳2,500), or full sanctuary hospice (৳5,000).</p>
+            <h3 className="font-serif text-lg font-bold text-[#1E2421] mb-1">Monthly Care (৳2,500) or 1-Time</h3>
+            <p className="text-xs sm:text-sm text-[#59655E]">
+              Sponsor monthly at <strong>৳2,500 / mo</strong> (food ৳1,200–1,500 & overheads ৳1,000–1,300) or choose a 1-time donation in USD ($100, $250, $500, Custom).
+            </p>
           </div>
           <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#D8CEBE]">
             <span className="font-serif text-2xl font-bold text-[#C65332] block mb-2">03</span>
@@ -105,7 +107,7 @@ export const Sponsor: React.FC = () => {
                     <div className="pt-2 border-t border-[#EAE4D7] flex items-center justify-between text-xs">
                       <span className="text-[#75837B]">Monthly Care Needed:</span>
                       <span className="font-serif font-bold text-sm text-[#1A382B]">
-                        ৳{animal.monthlySponsorshipNeededBDT?.toLocaleString() || '2,000'} / mo
+                        ৳{animal.monthlySponsorshipNeededBDT?.toLocaleString() || '2,500'} / mo
                       </span>
                     </div>
                   </div>

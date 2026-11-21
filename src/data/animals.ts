@@ -422,7 +422,7 @@ At Biraal Bari, Neel is a permanent sanctuary resident. He climbs cat trees with
     ],
     featuredImage: 'https://images.unsplash.com/photo-1513360309081-38f076278f1c?auto=format&fit=crop&w=1200&q=80',
     rescueDate: '2023-11-20',
-    monthlySponsorshipNeededBDT: 2000,
+    monthlySponsorshipNeededBDT: 2500,
     currentSponsorsCount: 3,
     isFeatured: true,
     medicalHistory: [

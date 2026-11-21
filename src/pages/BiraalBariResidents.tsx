@@ -47,13 +47,13 @@ export const BiraalBariResidents: React.FC = () => {
                 Biraal Bari Residents
               </h1>
               <p className="text-sm sm:text-base text-[#59655E] mt-2 max-w-2xl">
-                These resilient cats have overcome traumatic road injuries, amputations, and blindness. They live in comfort and dignity at Biraal Bari, supported by monthly animal sponsors.
+                These resilient cats have overcome traumatic road injuries, amputations, and blindness. They live in comfort and dignity at Biraal Bari, supported through our <strong>Sponsor a Cat program (৳2,500 / month)</strong> and <strong>1-time donation options</strong>.
               </p>
             </div>
 
             <Link to="/sponsor">
               <Button variant="terracotta" size="md">
-                Sponsorship Directory
+                Sponsor a Cat Directory
               </Button>
             </Link>
           </div>
